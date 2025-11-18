@@ -16,6 +16,9 @@ enum MessageType: String, Codable {
 
     /// Detected poses broadcast from server to all clients
     case poseBroadcast
+
+    /// Heartbeat/ping message for connection keep-alive
+    case heartbeat
 }
 
 /// Universal message wrapper for all WebSocket communication
