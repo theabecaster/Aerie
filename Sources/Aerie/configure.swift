@@ -2,9 +2,10 @@ import Vapor
 
 // configures your application
 public func configure(_ app: Application) async throws {
-    // uncomment to serve files from /Public folder
-    // app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
-
-    // register routes
+    // Listen on 0.0.0.0:8000
+    app.http.server.configuration.hostname = "0.0.0.0"
+    app.http.server.configuration.port = 8000
+    
+    // existing config (routes, middleware, etc.)
     try routes(app)
 }

@@ -35,3 +35,6 @@ default.profraw
 
 # Claude Code AI assistant instructions
 CLAUDE.md
+**/CLAUDE.md
+.claude/
+**/.claude/
