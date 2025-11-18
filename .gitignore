@@ -1,12 +1,37 @@
-Packages
-.build
-xcuserdata
+# Swift Package Manager
+Packages/
+.build/
+.swiftpm/
 *.xcodeproj
+Package.resolved
+
+# Xcode
+xcuserdata/
 DerivedData/
-.DS_Store
+
+# Vapor specific
 db.sqlite
-.swiftpm
 .env
 .env.*
 !.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Profiling
 default.profraw
+
+# Docker (optional)
+# docker-compose.override.yml
+
+# Logs
+*.log
+
+# Claude Code AI assistant instructions
+CLAUDE.md
